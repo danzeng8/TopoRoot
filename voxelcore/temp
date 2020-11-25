@@ -1,0 +1,208 @@
+# args = 5
+['surf2ma', '380', 'd:\\codes\\My Projects\\voxelvoro\\data\\hand\\hand.ply', '0.02']
+level, scale = (9, 0.7421875)
+using volume file: d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog
+[]
+
+
+--------------------------------------------------
+-----------PolyMender creates .sof/.sog-----------
+--------------------------------------------------
+mesh: d:\codes\My Projects\voxelvoro\data\hand\hand.ply
+ PolyMender-dc "d:\codes\My Projects\voxelvoro\data\hand\hand.ply" 9 0.7421875 "d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog" 
+
+PLY file format.
+Vertices: 16962 Polygons: 33920
+Origin: (-0.675321 -0.673229 -0.670183), Dimension: 1.347368
+Manifold table built.
+
+Scan converting to depth 9...
+/ 1000 triangles:  2.948113% complete.| 2000 triangles:  5.896226% complete.\ 3000 triangles:  8.844340% complete.- 4000 triangles:  11.792453% complete./ 5000 triangles:  14.740566% complete.| 6000 triangles:  17.688679% complete.\ 7000 triangles:  20.636792% complete.- 8000 triangles:  23.584906% complete./ 9000 triangles:  26.533019% complete.| 10000 triangles:  29.481132% complete.\ 11000 triangles:  32.429245% complete.- 12000 triangles:  35.377358% complete./ 13000 triangles:  38.325472% complete.| 14000 triangles:  41.273585% complete.\ 15000 triangles:  44.221698% complete.- 16000 triangles:  47.169811% complete./ 17000 triangles:  50.117925% complete.| 18000 triangles:  53.066038% complete.\ 19000 triangles:  56.014151% complete.- 20000 triangles:  58.962264% complete./ 21000 triangles:  61.910377% complete.| 22000 triangles:  64.858491% complete.\ 23000 triangles:  67.806604% complete.- 24000 triangles:  70.754717% complete./ 25000 triangles:  73.702830% complete.| 26000 triangles:  76.650943% complete.\ 27000 triangles:  79.599057% complete.- 28000 triangles:  82.547170% complete./ 29000 triangles:  85.495283% complete.| 30000 triangles:  88.443396% complete.\ 31000 triangles:  91.391509% complete.- 32000 triangles:  94.339623% complete./ 33000 triangles:  97.287736% complete.Time taken: 1.002000 seconds                   
+Patching...
+Time taken: 0.086000 seconds 
+Building signs...
+Time taken: 0.024000 seconds 
+
+Writing signed octree with geometry.
+Grid dimension: 512
+
+
+----------------------------------------------
+-----------volume to voxel boundary-----------
+----------------------------------------------
+"voroUtil -md=vol2mesh -onlyBndryVts "d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog" "d:\codes\My Projects\voxelvoro\data\hand\hand_380""
+Start reading .SOF file d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog
+------- creating octree -------- 
+octree res = 512
+bbox len in mesh space: 1.34737
+scale factor: 0.00263158
+lower left: (-0.675321, -0.673229, -0.670183)
+Warning: mesh_to_vox and auto_vox_to_mesh are not the same!
+mesh-to-vox: 380 0 0 256.622
+0 380 0 255.827
+0 0 380 254.67
+0 0 0 1
+
+auto-mesh-to-vox: 380 0 0 256.622
+0 380 0 255.827
+0 0 380 254.67
+0 0 0 1
+
+octree constructed. Leaf/empty/internal: 297138/394897/98862
+
+Done: volume file reading.
+average = 3.738046 max = 6
+23 is the longest
+cycle table set.
+# leaf centers collected: 296975
+writing boundary vts to "d:\codes\My Projects\voxelvoro\data\hand\hand_380.node"...
+time(I/O) -> extract boundary pts: 25 ms
+time(I/O) -> write boundary pts: 3231 ms
+
+
+----------------------------
+-----------tetgen-----------
+----------------------------
+Opening d:\codes\My Projects\voxelvoro\data\hand\hand_380.node.
+Delaunizing vertices...
+Delaunay seconds:  4.854
+
+NOT writing a .node file.
+NOT writing an .ele file.
+NOT writing an .face file.
+NOT writing an .edge file.
+Writing d:\codes\My Projects\voxelvoro\data\hand\hand_380.1.v.node.
+Writing d:\codes\My Projects\voxelvoro\data\hand\hand_380.1.v.edge.
+Writing d:\codes\My Projects\voxelvoro\data\hand\hand_380.1.v.face.
+Writing d:\codes\My Projects\voxelvoro\data\hand\hand_380.1.v.cell.
+
+Output seconds:  13.232
+Total running seconds:  18.099
+
+Statistics:
+
+  Input points: 296975
+
+  Mesh points: 296975
+  Mesh tetrahedra: 1737735
+  Mesh faces: 3479932
+  Mesh edges: 2039171
+  Convex hull faces: 8924
+
+time(TOTAL) -> tetgen: 18397.1824349 ms
+
+
+------------------------------
+-----------renaming-----------
+------------------------------
+
+
+------------------------------------------------
+-----------tetgen voro to mesh format-----------
+------------------------------------------------
+voroUtil -md=voro2mesh -needEuler -siteFile="d:\codes\My Projects\voxelvoro\data\hand\hand_380.node" "d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog" "d:\codes\My Projects\voxelvoro\data\hand\hand_380" "d:\codes\My Projects\voxelvoro\data\hand\hand_380_ma.ply" -tt=0.02
+Reading a volume file: d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog
+Start reading .SOF file d:\codes\My Projects\voxelvoro\data\hand\hand_380.sog
+------- creating octree -------- 
+octree res = 512
+bbox len in mesh space: 1.34737
+scale factor: 0.00263158
+lower left: (-0.675321, -0.673229, -0.670183)
+Warning: mesh_to_vox and auto_vox_to_mesh are not the same!
+mesh-to-vox: 380 0 0 256.622
+0 380 0 255.827
+0 0 380 254.67
+0 0 0 1
+
+auto-mesh-to-vox: 380 0 0 256.622
+0 380 0 255.827
+0 0 380 254.67
+0 0 0 1
+
+octree constructed. Leaf/empty/internal: 297138/394897/98862
+
+Done: volume file reading.
+Reading voroinfo ...
+Reading voro info from tetgen files... 
+Reading sites positions from file... 
+time(I/O) -> read pts from .node: 1291 ms
+Done: 296975 sites positions read. 
+.v.node file processed.
+.v.edge file processed.
+.v.face file processed.
+done: 296975 site positions inserted to kdtree.
+radii estimated.
+.v.cell file processed.
+time(I/O) -> read tetgen files: 5767 ms
+time -> finalize CC: 2587 ms
+Done: voro info read.
+Done: voro info read.
+Writing inside voro to mesh file ...
+Starting preprocessing voro...
+
+------ Euler Characteristic (of pruned voro diagram) -------
+euler = V - E + F = 1
+V / E / F / T / C = 872517 / 1448060 / 575544 / 0 / 1
+------ (Euler) -------
+before merging voro size: 1746659/3493318/2039171
+sq. radius = 5.42936e-13
+done: merging close vertices.
+done: saving remaining vertices (after merging) into geometry struct.
+done: updating validity tag for vertices.
+done: updating radius function for vertices.
+done: updating measure for vertices.
+done: checking and handling edges degeneracy after merging (also keep only valid edges' measure).
+done: checking and handling faces degeneracy after merging.
+done: saving edges into geometry struct.
+time -> finalize CC: 1206 ms
+done: replacing old with new geometry struct.
+done: updating sites & measure for faces.
+time -> merging operation: 1157 ms
+after merging voro size: 375013/799313/424301
+time -> VD in/out tagging: 1558 ms
+time(FULLSTAGE) -> IVD-merge: 2834 ms
+
+------ Euler Characteristic (of after merging vts within 0.000001) -------
+euler = V - E + F = 1
+V / E / F / T / C = 375013 / 799313 / 424301 / 0 / 1
+------ (Euler) -------
+Done preprocessing voro.
+Computing measures ...
+Done: computing measures
+measures extracted.
+V measure: [0,98.4733]
+E measure: [0,98.4733]
+F measure: [1,98.4733]
+inside geometry obtained.
+inside geometry compact-ified.
+time -> extract inside: 332 ms
+time -> compute measure: 309 ms
+inside part extracted. 
+writing to ply file... 
+# vts/edges/faces: 375013/1319045/944033
+range of measure: [1,98.4733]
+time -> finalize CC: 1803 ms
+skeleton: removed-tags init.ed.
+f_t, e_t: 7.56, 7.56
+init.ing q ...
+after init, q size: 160988
+prune: iterative removal done. 
+# remaining vts after thinning ( >= # connected components): 64508
+# remaining edges: 0
+# remaining faces: 124015
+
+------ Euler Characteristic (of voro diagram after thinning) -------
+euler = V - E + F = 1
+V / E / F / T / C = 64508 / 188522 / 124015 / 0 / 1
+------ (Euler) -------
+writing remaining cc to file: d:\codes\My Projects\voxelvoro\data\hand\hand_380_ma_thinned0.020000.ply
+writing to ply file... 
+# vts/edges/faces: 64508/0/124015
+time(THIN) -> thinning: 2683 ms
+time(I/O) -> write IVD: 3616 ms
+time(I/O) -> write thinned IVD: 213 ms
+Done: inside voro info written.
+writing radii to file d:\codes\My Projects\voxelvoro\data\hand\hand_380_ma.r
+Done: 750026 radii written to file d:\codes\My Projects\voxelvoro\data\hand\hand_380_ma.r
+time(I/O) -> write radii: 4254 ms
+Done: writing radii to file. 
