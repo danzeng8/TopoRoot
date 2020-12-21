@@ -134,18 +134,18 @@ def main(argv):
    os.chdir(r"../et")
    os.system("EtDev --nogui -ma_file=../tmp/topoOut.ply -r_file=../tmp/topoOut.r -smooth_i=3 -theta_1=0.01 --export_skel")
    os.chdir(r"../")
-   os.system("root_traits_auto.exe --in tmp/topoOut_skel.ply --out tmp/topoOut_skel_fixed.ply --fixStem --upperRadius 0.25 --lowerRadius 0.15")
+   os.system("root_traits_auto.exe --in tmp/topoOut_skel.ply --out tmp/topoOut_skel_fixed.ply --fixStem --upperRadius 0.22 --lowerRadius 0.17")
    os.system("python skeleton-mst.py tmp/topoOut_skel_fixed.ply tmp/acyclic.ply")
    if batch:
    	if verbose:
-   		os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + batchTraitFile+" --branch --upperRadius 0.25 --lowerRadius 0.15")
+   		os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + batchTraitFile+" --branch --upperRadius 0.22 --lowerRadius 0.17")
    	else:
-   		os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + batchTraitFile+" --upperRadius 0.25 --lowerRadius 0.15")
+   		os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + batchTraitFile+" --upperRadius 0.22 --lowerRadius 0.17")
    else:
 	   if verbose:
-	   	os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + outputfile+"_traits.csv --branch --upperRadius 0.25 --lowerRadius 0.15")
+	   	os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + outputfile+"_traits.csv --branch --upperRadius 0.22 --lowerRadius 0.17")
 	   else:
-	   	os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + outputfile+"_traits.csv --upperRadius 0.25 --lowerRadius 0.15")
+	   	os.system("root_traits_auto.exe --in tmp/acyclic.ply --out " + outputfile+".ply --traits " + outputfile+"_traits.csv --upperRadius 0.22 --lowerRadius 0.17")
 
 if __name__ == "__main__":
    main(sys.argv[1:])
