@@ -1,499 +1,733 @@
-﻿  TopoSimplifier.cpp
+﻿  pch.cpp
+  bbnode.cpp
   Unknown compiler version - please run the configure tests and report the results
-C:\Users\danzeng\source\repos\TopoSimplifier\third_party\dapcstp\include\bbnode.h(17,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\third_party\dapcstp\include\bbtree.h(119,20): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(402,16): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(403,16): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(422,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(453,16): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(454,16): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(457,16): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(460,16): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(522,34): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(528,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(529,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(536,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(581,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(592,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(593,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(594,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(764,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(764,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(764,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(775,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(775,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(775,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(822,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(822,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(822,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(833,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(833,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(833,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1190,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1190,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1190,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1205,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1205,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1205,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1294,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1302,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1310,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1318,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1468,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1468,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1468,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1477,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1477,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1477,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1521,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1521,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1521,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1529,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1529,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1529,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1569,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1569,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1569,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1577,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1577,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1577,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1791,53): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1921,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1957,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1972,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2002,23): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2031,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2061,23): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2091,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2363,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2378,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2378,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2378,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2382,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2382,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2382,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2433,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2441,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2466,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2481,35): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3000,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3013,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3055,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3068,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3068,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3068,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3072,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3072,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3072,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3124,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3130,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3153,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3164,35): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3616,120): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3758,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3769,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3887,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3925,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4003,29): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
-          with
-          [
-              _Rep=double
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4027,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4331,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4483,13): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4493,17): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4523,18): warning C4244: '*=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4539,39): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4539,92): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4560,39): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4560,92): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4583,40): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4583,93): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4603,40): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4603,93): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4666,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4667,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4667,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4715,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4734,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4736,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4741,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4743,64): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4749,47): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4751,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4757,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4758,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4760,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4861,9): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4862,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4863,19): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4916,9): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4917,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4918,19): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4981,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4985,34): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5032,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5036,34): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5347,105): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5383,105): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5517,66): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5533,67): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5550,108): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5550,145): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5709,44): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5719,99): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5730,108): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5730,145): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5835,9): warning C4244: 'return': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5845,12): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5920,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5928,80): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5936,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5944,86): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5952,70): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5962,70): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5966,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5986,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5997,85): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6020,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6031,85): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6035,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6067,40): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6077,92): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6112,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6122,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6167,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6173,31): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6193,88): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6223,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6233,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6256,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6261,71): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6284,88): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6312,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6321,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6348,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6356,80): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6363,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6371,86): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6380,108): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6389,108): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6420,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6420,165): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbnode.h(17,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+  bbtree.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbnode.h(17,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbtree.h(119,20): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(32,15): warning C4244: 'initializing': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(33,19): warning C4244: 'initializing': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(34,15): warning C4244: 'initializing': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(36,39): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(36,38): warning C4244: '=': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(37,43): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(37,42): warning C4244: '=': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(38,39): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\print.h(38,38): warning C4244: '=': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(83,17): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(83,26): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(200,21): warning C4244: '=': conversion from '_Ty' to '_Ty', possible loss of data
           with
           [
               _Ty=weight_t
           ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6510,31): warning C4305: '=': truncation from '__int64' to 'int'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6510,20): warning C4309: '=': truncation of constant value
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6584,25): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6586,19): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6826,3): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6902,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6942,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6965,14): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6988,14): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7137,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7139,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7141,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7143,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7155,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7157,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7159,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7161,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7185,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7187,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7189,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7191,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7202,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7204,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7206,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7208,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7379,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7390,75): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
+          and
+          [
+              _Ty=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(206,15): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(211,19): warning C4244: '=': conversion from '__int64' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(338,15): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(490,25): warning C4018: '>': signed/unsigned mismatch
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(637,26): warning C4018: '>': signed/unsigned mismatch
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(950,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bbtree.cpp(1170,14): warning C4244: '=': conversion from 'weight_t' to 'double', possible loss of data
+  bounds.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(110,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(304): message : see reference to function template instantiation 'weight_t daR<weight_t>(int,Inst &,std::vector<weight_t,std::allocator<weight_t>> &,std::vector<weight_t,std::allocator<weight_t>> &,std::vector<weight_t,std::allocator<weight_t>> &,weight_t,double,Sol *,bool)' being compiled
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(134,1): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(190,1): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(72,20): warning C4244: '=': conversion from '__int64' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(305): message : see reference to function template instantiation 'weight_t daR<double>(int,Inst &,std::vector<double,std::allocator<double>> &,std::vector<double,std::allocator<double>> &,std::vector<double,std::allocator<double>> &,weight_t,double,Sol *,bool)' being compiled
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(185,1): warning C4244: '+=': conversion from 'U' to 'weight_t', possible loss of data
+          with
+          [
+              U=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(272,1): warning C4244: '+=': conversion from '_Ty' to 'weight_t', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\bounds.cpp(281,19): warning C4244: '=': conversion from '_Ty' to 'weight_t', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+  cputime.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  heur.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\heur.cpp(147,6): warning C4101: 'v': unreferenced local variable
+  inst.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(80,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(112,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(135,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(153,25): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(162,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(181,27): warning C4267: '=': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(446,10): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type '_Ty'
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(446,10): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(446,10): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(446,10): message : consider using '%I64d' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(454,10): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 3 has type '_Ty'
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(454,10): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(454,10): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(454,10): message : consider using '%I64d' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(476,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(476,33): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(477,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(477,35): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(518,59): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(518,59): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(692,14): warning C4244: 'initializing': conversion from '__int64' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(694,29): warning C4244: '=': conversion from '_Ty' to 'double', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(697,15): warning C4244: '-=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(700,15): warning C4244: '-=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(706,22): warning C4244: '=': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(707,25): warning C4244: '=': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\inst.cpp(784,15): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+  options.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\options.cpp(33,78): warning C4305: 'argument': truncation from '__int64' to 'const T'
+          with
+          [
+              T=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\options.cpp(33,67): warning C4309: 'argument': truncation of constant value
+  prep.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\prep.cpp(510,13): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\prep.cpp(559,22): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\utility(248,16): warning C4244: 'initializing': conversion from '_Ty' to '_Ty1', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty1=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\prep.cpp(401): message : see reference to function template instantiation 'std::pair<weight_t,int>::pair<double,int,0>(std::pair<double,int> &&) noexcept' being compiled
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\prep.cpp(401): message : see reference to function template instantiation 'std::pair<weight_t,int>::pair<double,int,0>(std::pair<double,int> &&) noexcept' being compiled
+  procstatus.cpp
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\procstatus.cpp(35,13): warning C4244: 'return': conversion from 'double' to 'u_int', possible loss of data
+  sol.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  stats.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  timer.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  util.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbnode.h(17,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbtree.h(119,20): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(93,16): warning C4244: '=': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(114,30): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(121,32): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(122,32): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(85,9): warning C4101: 'w': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(84,12): warning C4101: 't': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(84,23): warning C4101: 'r': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(172,18): warning C4244: '=': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(224,29): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(240,27): warning C4244: '+=': conversion from '_Ty' to 'weight_t', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(153,12): warning C4101: 'prize': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(152,23): warning C4101: 'r': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(267,16): warning C4244: '=': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(316,30): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(340,21): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(343,21): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(258,23): warning C4101: 'r': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(371,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(432,10): warning C4244: 'return': conversion from 'weight_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(689,9): warning C4101: 'm': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(689,15): warning C4101: 'w': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(689,12): warning C4101: 't': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(689,6): warning C4101: 'n': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(796,15): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 3 has type '_Ty'
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(796,15): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(796,15): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(796,15): message : consider using '%I64d' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(804,16): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type '__int64'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(804,16): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(804,16): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(804,16): message : consider using '%I64d' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(806,34): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type '_Ty'
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(806,34): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(806,34): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(806,34): message : consider using '%I64d' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(810,14): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'weight_t'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(810,14): message : consider using '%lld' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(810,14): message : consider using '%Id' in the format string
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\src\util.cpp(810,14): message : consider using '%I64d' in the format string
+  TopoSimplifier.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbnode.h(17,16): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\dapcstp\include\bbtree.h(119,20): warning C4244: 'initializing': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(402,16): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(403,16): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(422,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(453,16): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(454,16): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(457,16): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(460,16): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(522,34): warning C4244: 'argument': conversion from 'float' to 'const unsigned __int64', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(533,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(534,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(536,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(581,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(597,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(598,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(599,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(765,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(765,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(765,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(776,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(776,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(776,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(823,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(823,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(823,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(834,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(834,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(834,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1191,14): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1191,16): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1191,18): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1206,20): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1206,38): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1206,56): warning C4838: conversion from '_Ty' to 'short' requires a narrowing conversion
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1295,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1303,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1311,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1319,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1469,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1469,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1469,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1478,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1478,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1478,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1522,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1522,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1522,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1530,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1530,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1530,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1570,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1570,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1570,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1578,31): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1578,36): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1578,41): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1792,53): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1922,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1958,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(1973,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2003,23): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2032,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2062,23): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2092,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2364,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2379,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2379,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2379,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2383,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2383,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2383,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2434,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2442,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2467,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(2482,35): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3001,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3014,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3056,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3069,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3069,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3069,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3073,26): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3073,30): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3073,34): warning C4838: conversion from 'int' to 'short' requires a narrowing conversion
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3125,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3131,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3154,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3165,35): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3617,120): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3759,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3770,32): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3888,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(3926,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4004,29): warning C4244: '+=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=double
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4028,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4332,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4484,13): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4494,17): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4524,18): warning C4244: '*=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4540,39): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4540,92): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4561,39): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4561,92): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4584,40): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4584,93): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4604,40): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4604,93): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4667,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4668,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4668,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4716,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4735,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4737,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4742,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4744,64): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4750,47): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4752,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4758,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4759,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4761,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4862,9): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4863,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4864,19): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4917,9): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4918,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4919,19): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4982,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(4986,34): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5033,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5037,34): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5348,105): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5384,105): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5518,66): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5534,67): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5551,108): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5551,145): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5710,44): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5720,99): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5731,108): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5731,145): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5836,9): warning C4244: 'return': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5846,12): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5921,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5929,80): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5937,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5945,86): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5953,70): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5963,70): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5967,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5987,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(5998,85): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6021,35): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6032,85): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6036,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6068,40): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6078,92): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6113,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6123,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6168,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6174,31): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6194,88): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6224,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6234,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6257,36): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6262,71): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6285,88): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6313,41): warning C4267: 'argument': conversion from 'size_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6322,93): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6349,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6357,80): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6364,83): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6372,86): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6381,108): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6390,108): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6421,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6421,165): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=weight_t
+          ]
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6511,31): warning C4305: '=': truncation from '__int64' to 'int'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6511,20): warning C4309: '=': truncation of constant value
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6585,25): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6587,19): warning C4244: 'argument': conversion from 'double' to 'weight_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6827,3): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6903,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6943,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6966,14): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(6989,14): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7138,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7140,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7142,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7144,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7156,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7158,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7160,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7162,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7186,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7188,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7190,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7192,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7203,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7205,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7207,21): warning C4244: 'initializing': conversion from 'int64_t' to 'double', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7209,47): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7380,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7391,75): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
           with
           [
               Value=int
           ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7418,1): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7419,1): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7465,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7467,1): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7419,1): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7420,1): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7466,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7468,1): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
           with
           [
               Value=int
           ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7737,95): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7737,186): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7783,73): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7785,66): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7738,95): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7738,186): warning C4267: '*=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7784,73): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(7786,66): warning C4267: 'argument': conversion from 'size_t' to 'Value', possible loss of data
           with
           [
               Value=int
           ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8297,57): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8297,109): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8308,54): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8308,106): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8324,59): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8324,111): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8335,56): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8335,108): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8390,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8415,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8594,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8621,9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8633,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8652,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8679,10): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8691,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9174,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9195,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9213,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9234,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9302,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9316,63): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9371,62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9474,16): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9478,16): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9481,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9500,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9607,33): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9688,67): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9818,35): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9876,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9990,35): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10051,63): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10096,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10138,53): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10183,113): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9906,11): warning C4101: 'page': unreferenced local variable
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9905,8): warning C4101: 'i': unreferenced local variable
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10308,12): warning C4101: 'page': unreferenced local variable
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10307,9): warning C4101: 'i': unreferenced local variable
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10470,12): warning C4101: 'page': unreferenced local variable
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10469,9): warning C4101: 'i': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8298,57): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8298,109): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8309,54): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8309,106): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8325,59): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8325,111): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8336,56): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8336,108): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8391,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8416,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8595,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8622,9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8634,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8653,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8680,10): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8692,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9175,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9196,17): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9214,39): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9235,18): warning C4244: 'initializing': conversion from 'int64_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9303,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9317,63): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9372,62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9475,16): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9479,16): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9482,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9501,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9608,33): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9689,67): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9819,35): warning C4244: '=': conversion from 'float' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9877,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9991,35): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10052,63): warning C4244: '=': conversion from 'double' to 'int64_t', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10097,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10139,53): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10184,113): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9907,11): warning C4101: 'page': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(9906,8): warning C4101: 'i': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10309,12): warning C4101: 'page': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10308,9): warning C4101: 'i': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10471,12): warning C4101: 'page': unreferenced local variable
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(10470,9): warning C4101: 'i': unreferenced local variable
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\tuple(163,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data
           with
           [
@@ -569,11 +803,16 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
               _Tag=std::_Unpack_tuple_t,
               _Tpl=std::tuple<int,__int64,int,int,int,int,int,int>
           ]
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8635): message : see reference to function template instantiation 'std::tuple<int,int,int,int,int,int,int,int>::tuple<int,__int64,int,int,int,int,int,int,0>(std::tuple<int,__int64,int,int,int,int,int,int> &&) noexcept' being compiled
-C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8635): message : see reference to function template instantiation 'std::tuple<int,int,int,int,int,int,int,int>::tuple<int,__int64,int,int,int,int,int,int,0>(std::tuple<int,__int64,int,int,int,int,int,int> &&) noexcept' being compiled
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8636): message : see reference to function template instantiation 'std::tuple<int,int,int,int,int,int,int,int>::tuple<int,__int64,int,int,int,int,int,int,0>(std::tuple<int,__int64,int,int,int,int,int,int> &&) noexcept' being compiled
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier\TopoSimplifier.cpp(8636): message : see reference to function template instantiation 'std::tuple<int,int,int,int,int,int,int,int>::tuple<int,__int64,int,int,int,int,int,int,0>(std::tuple<int,__int64,int,int,int,int,int,int> &&) noexcept' being compiled
   Generating code
-  0 of 7634 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\boost_1_62_0\boost\graph\named_function_params.hpp(240): warning C4172: returning address of local variable or temporary
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\boost_1_62_0\boost\graph\named_function_params.hpp(240): warning C4172: returning address of local variable or temporary
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\boost_1_62_0\boost\graph\named_function_params.hpp(240): warning C4172: returning address of local variable or temporary
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\boost_1_62_0\boost\graph\named_function_params.hpp(240): warning C4172: returning address of local variable or temporary
+C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\third_party\boost_1_62_0\boost\graph\named_function_params.hpp(240): warning C4172: returning address of local variable or temporary
+  7541 of 7634 functions (98.8%) were compiled, the rest were copied from previous compilation.
+    52 functions were new in current compilation
+    16 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  TopoSimplifier.vcxproj -> C:\Users\danzeng\source\repos\TopoSimplifier\TopoSimplifier.exe
+  TopoSimplifier.vcxproj -> C:\Users\danzeng\source\repos\root_pipeline\TopoSimplifier\TopoSimplifier.exe
