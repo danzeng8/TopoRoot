@@ -122,7 +122,7 @@ def main(argv):
    				break
    			ct = ct + 1
 
-   holeFillCommand = 'ImageJ-win64 --ij2 --headless --console --run "macros/holeFill.ijm" "input=' + "\'" + "../../tmp/topoOut/" + "', suffix=\'.png\', threshold=" + str(shape) + "\""
+   holeFillCommand = 'ImageJ-win64 --ij2 --headless --console --run "macros/holeFill_old.ijm" "input=' + "\'" + "../../tmp/topoOut/" + "', suffix=\'.png\', threshold=" + str(shape) + "\""
    print(holeFillCommand)
    os.system(holeFillCommand)
    os.chdir(r"../../TopoSimplifier")
