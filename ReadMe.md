@@ -14,9 +14,17 @@ Further details about these steps can be found in our ['NAPPN presentation (Nati
 
 As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel.
 
+Sorghum Roots:
+
 ![](pics/sorghum_4.PNG)
 
 Each sample was processed in about eight minutes, without user intervention between samples.
+
+Sorghum Panicles:
+
+![](pics/sorghum_panicles.JPG)
+
+The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification pipeline. In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
 
 ## Installation
 
