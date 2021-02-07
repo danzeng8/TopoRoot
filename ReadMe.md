@@ -1,5 +1,7 @@
 # TopoRoot: An automatic pipeline for plant architectural analysis from 3D Imaging
 
+![](pics/pipeline.png)
+
 Running Instructions:
 
 This pipeline can be run either in batch (a directory), or one file at a time. 
