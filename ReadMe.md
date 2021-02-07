@@ -75,7 +75,7 @@ This will produce a single .ply file, .off file, and excel file (.csv).
 
 There are additional optional arguments to this pipeline depending on the desired setting and application. These include parameters for the degree of topological repair and stem identification. Please contact me at danzen8@gmail.com for further details. 
 
-##Understanding the output
+## Understanding the output
 
 Our pipeline produces one trait file (.csv) which encompasses the statistics across all samples processed, and also visualization mesh files to show the skeleton hierarchy (.ply and .off). 
 
