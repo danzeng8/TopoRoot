@@ -65,10 +65,39 @@ Our pipeline currently takes two possible types of inputs: raw files and image s
 
 For the downsampling rate (-d), choose a rate such that the downsampled image is less than 400^3 in dimensions. This will help to prevent any speed issues. For example if the original image volumes are 1800^3 in dimensions, a downsampling rate of 6 may be used to produce downsampled images, each of size 300^3. 
 
+After a successful run using batch processing, the output folder will contain a .ply file and .off file for each sample, and an excel file (.csv) with trait statistics. See the section below this one for details on these files.
 
-Output:
+The pipeline may also be run in on individual 3D image samples, without batch processing. This can be done by running the root_pipeline.py script as follows:
 
-A .csv file in the format
+python root_pipeline.py -i <input directory> -o <output directory> -d <downsampling rate>
+
+This will produce a single .ply file, .off file, and excel file (.csv).
+
+There are additional optional arguments to this pipeline depending on the desired setting and application. These include parameters for the degree of topological repair and stem identification. Please contact me at danzen8@gmail.com for further details. 
+
+##Understanding the output
+
+Our pipeline produces one trait file (.csv) which encompasses the statistics across all samples processed, and also visualization mesh files to show the skeleton hierarchy (.ply and .off). 
+
+For each sample, and for  each hierarchy level of the plant structure (levels 1-5), we output the following traits:
+
+* Branch count
+* Average length
+* Average geodesic depth
+* Average thickness
+* Number of skeleton edges
+* Average tortuosity
+* Angle to gravity
+* Angle to parent branch
+* Tip angle
+* Emergence angle
+* Midpoint angle
+
+These traits are not only averaged across each hierarchy level, but also averaged for the whole sample (as the last few data entries in each row, for each sample).
+
+Specifically, the structure and format of the output excel file can be found below. Each row of the excel sheet represents the traits for one sample. Hierarchy levels 1-5 will occupy most columns, while the last several columns are reserved for aggregated traits for the whole sample.
+
+Format of the output .csv file: 
 
 Sample 1 Name, level 1 branch count, level 1 average length, level 1 average geodesic depth, level 1 average radius, level 1 number of skeleton edges, level 1 average tortuosity, level 1 angle to gravity, level 1 angle to parent, level 1 tip angle, level 1 emergence angle, level 1 midpoint angle, level 1 branch children, level 2 branch count, level 2 average length, level 2 average geodesic depth, level 2 average radius, level 2 number of skeleton edges, level 2 average tortuosity, level 2 angle to gravity, level 2 angle to parent, level 2 tip angle, level 2 emergence angle, level 2 midpoint angle, level 2 branch children, level 3 branch count, level 3 average length, level 3 average geodesic depth, level 3 average radius, level 3 number of skeleton edges, level 3 average tortuosity, level 3 angle to gravity, level 3 angle to parent, level 3 tip angle, level 3 emergence angle, level 3 midpoint angle, level 3 branch children, level 4 branch count, level 4 average length, level 4 average geodesic depth, level 4 average radius, level 4 number of skeleton edges, level 4 average tortuosity, level 4 angle to gravity, level 4 angle to parent, level 4 tip angle, level 4 emergence angle, level 4 midpoint angle, level 4 branch children, level 5 branch count, level 5 average length, level 5 average geodesic depth, level 5 average radius, level 5 number of skeleton edges, level 5 average tortuosity, level 5 angle to gravity, level 5 angle to parent, level 5 tip angle, level 5 emergence angle, level 5 midpoint angle, level 5 branch children, 
 total branch length, total number of branches, total average branch length, total skeleton edges, average angle to gravity, average parent angle, average tip angle, average emergence angle, average midpoint angle, average number of children
@@ -77,31 +106,3 @@ total branch length, total number of branches, total average branch length, tota
 ....
 Sample N Name, level 1 branch count, level 1 average length, level 1 average geodesic depth, level 1 average radius, level 1 number of skeleton edges, level 1 average tortuosity, level 1 angle to gravity, level 1 angle to parent, level 1 tip angle, level 1 emergence angle, level 1 midpoint angle, level 1 branch children, level 2 branch count, level 2 average length, level 2 average geodesic depth, level 2 average radius, level 2 number of skeleton edges, level 2 average tortuosity, level 2 angle to gravity, level 2 angle to parent, level 2 tip angle, level 2 emergence angle, level 2 midpoint angle, level 2 branch children, level 3 branch count, level 3 average length, level 3 average geodesic depth, level 3 average radius, level 3 number of skeleton edges, level 3 average tortuosity, level 3 angle to gravity, level 3 angle to parent, level 3 tip angle, level 3 emergence angle, level 3 midpoint angle, level 3 branch children, level 4 branch count, level 4 average length, level 4 average geodesic depth, level 4 average radius, level 4 number of skeleton edges, level 4 average tortuosity, level 4 angle to gravity, level 4 angle to parent, level 4 tip angle, level 4 emergence angle, level 4 midpoint angle, level 4 branch children, level 5 branch count, level 5 average length, level 5 average geodesic depth, level 5 average radius, level 5 number of skeleton edges, level 5 average tortuosity, level 5 angle to gravity, level 5 angle to parent, level 5 tip angle, level 5 emergence angle, level 5 midpoint angle, level 5 branch children, total branch length, total number of branches, total average branch length, total skeleton edges, average angle to gravity, average parent angle, average tip angle, average emergence angle, average midpoint angle, average number of children,
 total branch length, total number of branches, total average branch length, average tortuosity, total skeleton edges, average angle to gravity, average parent angle, average tip angle, average emergence angle, average midpoint angle, average number of children
-
-
-To run file by file:
-
-python root_pipeline.py -i <input file> -o <output directory> -d <downsampling rate>
-
-Optional arguments:
--s shape threshold
--l lower envelope
--u upper envelope
--v verbose
-
-Two programs may need to be rebuilt based on your machine's specs. These are TopoSimplifier and root_traits_auto. If they fail to run (showing an error such as "missing VCRunTime140.DLL"), then follow the instructions below to rebuild the following two repositories:
-
-TopoSimplifier:
-https://github.com/danzeng8/TopoSimplifier
-
-root_traits_auto:
-https://github.com/danzeng8/root_traits_auto
-
-Download each of these repositories to your machine, and open their Visual Studio solutions (.sln files). In the top of the Visual Studio Window, change the build mode to 'Release' and architecture to x64.
-
-Then, go to Project > Properties. This is where the Windows SDK Version and Platform Toolset will depend on your machine. If you are using Visual studio 2019, then try v142 for the platform toolset (v141 for VS 2017, v140 for VS 2015). Windows SDK version 10.0 is the latest installed version on my machine (a Windows 10), however I have also seen Windows 8 SDK to work instead on older machines (sometimes even if they are Windows 10). Apply the changes in the property window. 
-
-Next, in the Visual Studio menu go to Build > Build Solution. If successful, this will update the .exe file in the main repository directory (called TopoSimplifier.exe and root_traits_auto.exe). Otherwise, keep tweaking the Project properties as in the above - assuming a Windows 8 or 10 machine, there should be some settings which will allow for a successful build.
-
-One more thing:
-When downloading this repository, make sure the simpleDictionaryFull.bin file in the TopoSimplifier directory is completely downloaded (ALL 131,072 Kb of it). Also make sure that the tmp directory and its subdirectories are completely downloaded.
