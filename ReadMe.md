@@ -26,6 +26,13 @@ Sorghum Panicles:
 
 The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification pipeline. In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
 
+Maize Crown Roots:
+
+![](pics/maize_roots.PNG)
+
+
+Our pipeline may also be applied Maize Crown roots, producing both the architectural traits detailed below and other traits specific to crown roots (such as per-node statistics and the soil line). This is an area of future work.
+
 ## Installation
 
 The steps of installation consist of downloading this code repository, building a few C++ projects, and ensuring the proper python version is installed. The pipeline currently only builds and operates on Windows. 
