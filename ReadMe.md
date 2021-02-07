@@ -189,6 +189,7 @@ I would like to thank the following people for their support, input, and collabo
 * Mon-Ray Shao
 * Mao Li
 * Keith Duncan
+* Ni Jiang
 * David Letscher
 * Erin Chambers
 * Hannah Schreiber
