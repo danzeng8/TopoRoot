@@ -22,7 +22,7 @@ Each sample was processed in about eight minutes, without user intervention betw
 
 Sorghum Panicles:
 
-![](pics/sorghum_panicles.jpg)
+<img src="pics/sorghum_panicles.jpg" alt="sorghum panicles" width="650">
 
 The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification pipeline. In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
 
