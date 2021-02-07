@@ -14,9 +14,8 @@ Further details about these steps can be found in our ['NAPPN presentation (Nati
 
 As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel.
 
-
-![](pics/11_1.PNG | width=100)
-![](pics/16_2.PNG | width=100)
+<img src="pics/11_1.PNG" alt="alt text" width="100">
+![](pics/16_2.PNG)
 
 ## Installation
 
