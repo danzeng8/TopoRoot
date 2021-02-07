@@ -16,6 +16,8 @@ As part of an ongoing genome-wide large-scale study to discover the genes that p
 
 ![](pics/sorghum_4.PNG)
 
+Each sample was processed in about eight minutes, without user intervention between samples.
+
 ## Installation
 
 The steps of installation consist of downloading this code repository, building a few C++ projects, and ensuring the proper python version is installed. The pipeline currently only builds and operates on Windows. 
