@@ -48,7 +48,7 @@ Among other potential errors, you may see an error such as "Import Error: No mod
 
 If you encounter any further issues, please contact me (Dan Zeng) at danzeng8@gmail.com. 
 
-##Running the pipeline
+## Running the pipeline
 
 This pipeline can be run either in batch (a directory), or one file at a time. 
 
