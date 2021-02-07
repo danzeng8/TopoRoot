@@ -10,6 +10,12 @@ TopoRoot is a pipeline of geometric algorithms for automatically obtaining archi
 
 Further details about these steps can be found in our ['NAPPN presentation (National Plant Phenotyping Network Conference 2021)'](https://github.com/danzeng8/TopoRoot/blob/master/pics/NAPPN_2021_danzeng.pptx)
 
+## Installation
+
+The steps of installation consist of downloading this code repository, building a few C++ projects, and ensuring the proper python version is installed.
+
+1. Download this repository by either clicking on Code > Download Zip in the top right, and then unzipping, or by using the git clone https://github.com/danzeng8/TopoRoot.git command.
+
 Running Instructions:
 
 This pipeline can be run either in batch (a directory), or one file at a time. 
