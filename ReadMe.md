@@ -10,6 +10,14 @@ TopoRoot is a pipeline of geometric algorithms for automatically obtaining archi
 
 Further details about these steps can be found in our ['NAPPN presentation (National Plant Phenotyping Network Conference 2021)'](https://github.com/danzeng8/TopoRoot/blob/master/pics/NAPPN_2021_danzeng.pptx)
 
+## Results and Examples
+
+As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel.
+
+
+![](pics/11_1.PNG)
+![](pics/16_2.PNG)
+
 ## Installation
 
 The steps of installation consist of downloading this code repository, building a few C++ projects, and ensuring the proper python version is installed. The pipeline currently only builds and operates on Windows. 
