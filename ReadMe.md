@@ -200,11 +200,15 @@ Zeng, Dan. "TopoRoot: An automatic pipeline for plant architectural analysis fro
 References to other works:
 
 * Dan Zeng, Erin Chambers, David Letscher, and Tao Ju. 2020. To cut or to fill: a global optimization approach to topological simplification. ACM Trans. Graph. 39, 6 (2020), 201.
-	* See ['project website'](https://danzeng8.github.io/topo-simplifier/)
+	* [Project Website](https://danzeng8.github.io/topo-simplifier/)
 
 * Mao Li, Mon-Ray Shao, Dan Zeng, Tao Ju, Elizabeth A. Kellogg, Christopher N. Topp. 2020. 	
 Comprehensive 3D phenotyping reveals continuous morphological variation across genetically diverse sorghum inflorescences. New Phytologist, 226: 1873-1885.
+	* [Journal Cover](https://nph.onlinelibrary.wiley.com/toc/14698137/2020/226/6)
+	* News coverage in [Danforth](https://www.danforthcenter.org/news/looking-inside-grass-flowers/) and at [Wash U](https://engineering.wustl.edu/news/2020/3D-images-allow-detailed-insight-into-grasses.html)
 
 * Yajie Yan, David Letscher, and Tao Ju. 2018. Voxel Cores: Efficient, robust, and provably good approximation of 3D medial axes. ACM Trans. Graph. 37, 4 (2018), 44.
+	* [Project website](https://yajieyan.github.io/project/voxelcore/)
 
 * Yajie Yan, Kyle Sykes, Erin Chambers, David Letscher, and Tao Ju. 2016. Erosion Thickness on Medial Axes of 3D Shapes. ACM Trans. Graph. 35, 4 (2016), 38.
+	* [Project website](https://yajieyan.github.io/project/et/)
