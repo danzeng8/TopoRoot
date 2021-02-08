@@ -12,24 +12,15 @@ Further details about these steps can be found in our ['NAPPN presentation (Nati
 
 ## Results and Examples
 
-As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel.
+As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel. Each sample was processed in about eight minutes, without user intervention between samples. The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification algorithm to trace branches such as those seen in [Li et. al 2020]:
 
-Sorghum Roots:
+<img src="pics/sorghum_paper.PNG" alt="sorghum panicles" width="650">
 
-![](pics/sorghum_4.PNG)
-
-Each sample was processed in about eight minutes, without user intervention between samples.
-
-Sorghum Panicles:
-
-<img src="pics/sorghum_panicles.jpg" alt="sorghum panicles" width="650">
-
-The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification pipeline. In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
+ In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
 
 Maize Crown Roots:
 
-![](pics/maize_roots.PNG)
-
+![](pics/maize_root.PNG)
 
 Our pipeline may also be applied Maize Crown roots, producing both the architectural traits detailed below and other traits specific to crown roots (such as per-node statistics and the soil line). This is an area of future work.
 
@@ -195,4 +186,5 @@ I would like to thank the following people for their support, input, and collabo
 * Hannah Schreiber
 * Tao Ju
 * Yiwen Ju
+* Gustavo Gratacos
 * Yajie Yan
