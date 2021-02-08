@@ -200,6 +200,7 @@ Zeng, Dan. "TopoRoot: An automatic pipeline for plant architectural analysis fro
 References to other works:
 
 * Dan Zeng, Erin Chambers, David Letscher, and Tao Ju. 2020. To cut or to fill: a global optimization approach to topological simplification. ACM Trans. Graph. 39, 6 (2020), 201.
+	* See ['project website'](https://danzeng8.github.io/topo-simplifier/)
 
 * Mao Li, Mon-Ray Shao, Dan Zeng, Tao Ju, Elizabeth A. Kellogg, Christopher N. Topp. 2020. 	
 Comprehensive 3D phenotyping reveals continuous morphological variation across genetically diverse sorghum inflorescences. New Phytologist, 226: 1873-1885.
