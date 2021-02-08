@@ -20,11 +20,11 @@ As part of an ongoing genome-wide large-scale study to discover the genes that p
 
  In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
 
-Maize Crown Roots:
+Our pipeline may also be applied Maize Crown roots, producing both the architectural traits detailed below and other traits specific to crown roots (such as per-node statistics and the soil line). This is an area of future work.
+
+A maize crown root:
 
 ![](pics/maize_root.PNG)
-
-Our pipeline may also be applied Maize Crown roots, producing both the architectural traits detailed below and other traits specific to crown roots (such as per-node statistics and the soil line). This is an area of future work.
 
 ## Installation
 
