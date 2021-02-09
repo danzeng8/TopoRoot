@@ -231,7 +231,8 @@ Comprehensive 3D phenotyping reveals continuous morphological variation across g
 	* [Project website](https://yajieyan.github.io/project/et/)
 
 
-![](pics/dan_seeds.JPG)
-![](pics/dan_seeds_2.JPG)
+![](pics/dan_seeds.jpg)
+
+![](pics/dan_seeds_2.jpg)
 Planting sorghum seeds on internship with Chris Topp ‘s lab at DDPSC, May 2018; where the pipeline truly begins!
 
