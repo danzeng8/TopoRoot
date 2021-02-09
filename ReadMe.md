@@ -229,3 +229,9 @@ Comprehensive 3D phenotyping reveals continuous morphological variation across g
 
 * Yajie Yan, Kyle Sykes, Erin Chambers, David Letscher, and Tao Ju. 2016. Erosion Thickness on Medial Axes of 3D Shapes. ACM Trans. Graph. 35, 4 (2016), 38.
 	* [Project website](https://yajieyan.github.io/project/et/)
+
+
+![](pics/dan_seeds.JPG)
+![](pics/dan_seeds_2.JPG)
+Planting sorghum seeds on internship with Chris Topp ‘s lab at DDPSC, May 2018; where the pipeline truly begins!
+
