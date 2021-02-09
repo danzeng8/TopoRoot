@@ -2,6 +2,12 @@
 
 ![](pics/pipeline.PNG)
 ## Introduction
+
+### Motivation
+3D imaging can now capture plant structures both above and below the soil with high throughput and accuracy. X-ray CT imaging especially now has the ability to capture very complex structures such as sorghum roots, sorghum panicles, and maize root crowns with high resolution. Other imaging modalities such as Optical imaging, PET, and MRI have also emerged to be able to capture the plant at different granularities and points in time. One of the primary goals for plant phenotyping is to be able to obtain fine-grained architectural traits from the imaging for genetic studies. This includes computing geometric traits such as branch lengths, angles, and count as well as computing the hierarchy, such as the stem, primary root, and lateral roots. In order to be useful for genetic studies, these traits need to be both accurate and computed with high throughput. A major obstacle to obtaining fine-grained architecture is the presence of topological and geometrical errors in shapes reconstructed from the image volume, which can come in the form of merged branches creating cycles, disconnections between different parts of branches, and internal voids within the stem of the plant and along the branches. Issues such as these make it very challenging to obtain accurate geometric and hierarchical traits. Our pipeline, introduced next, addresses these challenges.
+
+### TopoRoot
+
 TopoRoot is a pipeline of geometric algorithms for automatically obtaining architectural traits from 3D grayscale images of plant structures both above and below the soil, with high accuracy and throughput. Our pipeline is intended for plant scientists who would like to batch process large numbers of 3D images, potentially for the purpose of genetic phenotyping studies, or can also be used for other purposes such as visualization. For the first time, we bring state-of-the-art techniques from computer graphics to resolve several topological and geometric issues which are frequently encountered in image-to-analysis pipelines for plant phenotyping of structures including but not limited to Sorghum roots and panicles, and Maize roots. These contributions include:
 * The removal of excessive topological features from the shape which is reconstructed from the imaging. These topological features include merged branches, disconnected components, noise, and internal voids, which are removed by our pipeline with minimal geometric change, using the method in [Zeng et. al, 2020].
 
