@@ -70,10 +70,10 @@ This pipeline can be run either in batch (a directory), or one file at a time.
 
 To run in batch, run toporoot_batch.py as follows:
 
-python toporoot_batch.py -i <input directory> -o <output directory> -d <downsampling rate>
+`python toporoot_batch.py -i <input directory> -o <output directory> -d <downsampling rate>`
 
 Example:
-python toporoot_batch.py -i C:/Users/danzeng/Sorghum/Roots/batch/ -o C:/Users/danzeng/Sorghum/Roots/batch_out/ -d 6
+`python toporoot_batch.py -i C:/Users/danzeng/Sorghum/Roots/batch/ -o C:/Users/danzeng/Sorghum/Roots/batch_out/ -d 6`
 
 Our pipeline currently takes two possible types of inputs: raw files and image slices. 
 * If the input is a folder containing raw files, then for each .raw file in the folder it must also have a corresponding .dat file in the same directory, with the exact same name (besides the extension). 
@@ -85,7 +85,7 @@ After a successful run using batch processing, the output folder will contain a 
 
 The pipeline may also be run in on individual 3D image samples, without batch processing. This can be done by running the toporoot.py script as follows:
 
-python toporoot.py -i <input directory> -o <output directory> -d <downsampling rate>
+`python toporoot.py -i <input directory> -o <output directory> -d <downsampling rate>`
 
 This will produce a single .ply file, .off file, and excel file (.csv).
 
