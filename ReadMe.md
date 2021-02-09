@@ -2,7 +2,7 @@
 
 ![](pics/pipeline.PNG)
 ## Introduction
-TopoRoot is a pipeline of geometric algorithms for automatically obtaining architectural traits from 3D grayscale images of plant structures both above and below the soil, with high accuracy and throughput. Our pipeline may be applied to batch process large numbers of 3D images, potentially for the purpose of genetic phenotyping studies, or can be applied to individual images. For the first time, we bring state-of-the-art techniques from computer graphics to resolve several topological and geometric issues which are frequently encountered in image-to-analysis pipelines for plant phenotyping. These contributions include:
+TopoRoot is a pipeline of geometric algorithms for automatically obtaining architectural traits from 3D grayscale images of plant structures both above and below the soil, with high accuracy and throughput. Our pipeline is intended for plant scientists who would like to batch process large numbers of 3D images, potentially for the purpose of genetic phenotyping studies, or can also be used for other purposes such as visualization. For the first time, we bring state-of-the-art techniques from computer graphics to resolve several topological and geometric issues which are frequently encountered in image-to-analysis pipelines for plant phenotyping of structures including but not limited to Sorghum roots and panicles, and Maize roots. These contributions include:
 * The removal of excessive topological features from the shape which is reconstructed from the imaging. These topological features include merged branches, disconnected components, noise, and internal voids, which are removed by our pipeline with minimal geometric change, using the method in [Zeng et. al, 2020].
 
 
@@ -234,5 +234,6 @@ Comprehensive 3D phenotyping reveals continuous morphological variation across g
 ![](pics/dan_seeds.jpg)
 
 ![](pics/dan_seeds_2.jpg)
+
 Planting sorghum seeds on internship with Chris Topp ‘s lab at DDPSC, May 2018; where the pipeline truly begins!
 
