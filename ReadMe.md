@@ -127,6 +127,8 @@ For each sample, and for  each hierarchy level of the plant structure (levels 1-
 * Emergence angle
 * Midpoint angle
 
+![](pics/traits.PNG)
+
 These traits are not only averaged across each hierarchy level, but also averaged for the whole sample (as the last few data entries in each row, for each sample).
 
 Specifically, the structure and format of the output excel file can be found below. Each row of the excel sheet represents the traits for one sample. Hierarchy levels 1-5 will occupy most columns, while the last several columns are reserved for aggregated traits for the whole sample.
