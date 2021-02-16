@@ -32,9 +32,8 @@ pruning techniques introduced in [Yan et. al, 2018] and [Yan et. al, 2016].
 
 ![](pics/stem_identification.PNG)
 
-Further details about these steps can be found in our ['NAPPN presentation (National Plant Phenotyping Network Conference 2021)'](https://github.com/danzeng8/TopoRoot/blob/master/pics/NAPPN_2021_danzeng.pptx).
 
-See the References section at the end of this page for full citations to the talk and the other mentioned works. Feel free to cite this pipeline as mentioned in the References section.
+See the References section at the end of this page for full citations to our talk at the North American Plant Phenotyping Network Conference (NAPPN) 2021, as well as the other mentioned works. Feel free to cite this pipeline as mentioned in the References section.
 
 ## Results and Examples
 
