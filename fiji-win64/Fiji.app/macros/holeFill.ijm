@@ -13,8 +13,9 @@ setThreshold(threshold, 255);
 print("set threshold");
 setOption("BlackBackground", true);
 run("Convert to Mask", "method=Default background=Dark black");
-run("SelectiveHoleFilling");
-close();
+run("Fill Holes", "stack");
+//run("SelectiveHoleFilling")
+print("filled holes");
 run("Image Sequence... ", "format=PNG name=[] save=../../tmp/holefill/0000.png");
 print("saved image sequence");
 run("Quit");

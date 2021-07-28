@@ -29,7 +29,7 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hi:o:s:d:e:k:n:x:v:b:m:c:p:",[""])
    except getopt.GetoptError:
-      print('toporoot.py -i <inputfile> -o <outputfile> -s <shape> -k <kernel> -n <neighborhood> -d <downsampling rate>')
+      print('test.py -i <inputfile> -o <outputfile>')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
@@ -140,14 +140,17 @@ def main(argv):
 
    os.system(preprocessCommand)
    #if rootShape:
+
    with open('../tmp/rootShape.csv', newline='') as rootShapeFile:
       rootreader = csv.reader(rootShapeFile, delimiter=',')
       ct = 0
       for row in rootreader:
          if ct == 0:
             shape = int(row[0])
-            n = int(row[1])
-            k = int(row[2])
+            if n == -1:
+               n = int(row[1])
+            if k == -1:
+               k = int(row[2])
             print("S automatically set to ", shape)
             break
          ct = ct + 1
