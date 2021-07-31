@@ -114,7 +114,7 @@ The architecture is now colored by hierarchy level. The "coolest color", in this
 At a minimum, our pipeline takes as input a shape threshold (--S) which represents the iso-value of the iso-surface from which an initial segmentation is produced. The iso-surface at *S* should generally capture the geometry of the root, and provide a balance between capturing thick and thin roots. However, it is okay for noise to be present, since our pipeline is meant to address topological issues including disconnected components, cycles, and empty voids (see picture below). We additionally ask for a kernel threshold (--K, the lowest value that avoids merging of thick roots) and a neighborhood threshold (--N, the highest value that avoids disconnecting thin roots), such that the increasing ordering of the three thresholds are neighborhood, shape, and kernel. Our method will attempt to fix topological errors at the shape threshold guided by the neighborhood and kernel thresholds. For X-ray CT images of corn roots, our code automatically provides default values of *K* and *N* which work well in practice (see source code for more details on the defaults), but for other applications and for further refinement of the hierarchy quality, we recommend the steps below. Further details can be found in the paper.
 
 *An example of possible choices for n, s, and k*
-![](pics/three-iso-values.PNG)
+![](pics/three-iso-values.png)
 
 To determine the three iso-values, we highly recommend opening the grayscale image slices in a 3D volume visualization software such as [`UCSF Chimera`](https://www.cgl.ucsf.edu/chimera/), a visualization software developed for the biomedical imaging community. 
 
