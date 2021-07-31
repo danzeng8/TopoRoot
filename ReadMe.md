@@ -1,4 +1,4 @@
-# TopoRoot: An automatic pipeline for plant architectural analysis from 3D Imaging
+# TopoRoot: A method for computing hierarchy and fine-grained traits of maize roots from CT images
 
 ![](pics/pipeline.PNG)
 ## Introduction
