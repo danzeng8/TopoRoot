@@ -3,87 +3,21 @@
 ![](pics/pipeline.PNG)
 ## Introduction
 
-### Motivation
-3D imaging can now capture plant structures both above and below the soil with high throughput and accuracy. X-ray CT imaging especially now has the ability to capture very complex structures such as sorghum roots, sorghum panicles, and maize root crowns with high resolution. Other imaging modalities such as Optical imaging, PET, and MRI have also emerged to be able to capture the plant at different granularities and points in time. One of the primary goals for plant phenotyping is to be able to obtain fine-grained architectural traits from the imaging for genetic studies. This includes computing geometric traits such as branch lengths, angles, and count as well as computing the hierarchy, such as the stem, primary root, and lateral roots. In order to be useful for genetic studies, these traits need to be both accurate and computed with high throughput. A major obstacle to obtaining fine-grained architecture is the presence of topological and geometrical errors in shapes reconstructed from the image volume, which can come in the form of merged branches creating cycles, disconnections between different parts of branches, and internal voids within the stem of the plant and along the branches. Issues such as these make it very challenging to obtain accurate geometric and hierarchical traits. Our pipeline, introduced next, addresses these challenges.
+TopoRoot is a high-throughput computational method that computes fine-grained architectural traits from 3D CT images of excavated maize root crowns. These traits include the number, length, thickness, angle, tortuosity, and number of children for the roots at each level of the hierarchy. TopoRoot combines state-of-the-art algorithms in computer graphics, such as topological simplification and geometric skeletonization, with customized heuristics for robustly obtaining the branching structure and hierarchical information.
 
-### TopoRoot
+## Installation and Execution
 
-TopoRoot is a pipeline of geometric algorithms for automatically obtaining architectural traits from 3D grayscale images of plant structures both above and below the soil, with high accuracy and throughput. Our pipeline is intended for plant scientists who would like to batch process large numbers of 3D images, potentially for the purpose of genetic phenotyping studies, or can also be used for other purposes such as visualization. For the first time, we bring state-of-the-art techniques from computer graphics to resolve several topological and geometric issues which are frequently encountered in image-to-analysis pipelines for plant phenotyping of structures including but not limited to Sorghum roots and panicles, and Maize roots. These contributions include:
-* The removal of excessive topological features from the shape which is reconstructed from the imaging. These topological features include merged branches, disconnected components, noise, and internal voids, which are removed by our pipeline with minimal geometric change, using the method in [Zeng et. al, 2020].
+Open up command prompt, clone the repository (git clone https://github.com/danzeng8/TopoRoot.git), then navigate to the main directory. TopoRoot can be run as follows. The first three arguments are required, while the rest are optional:
 
+TopoRoot --in [input_file] --out [output_file] --S [shape] --K [kernel] --N [neighborhood] --d [downsampling rate] --plane
 
-![](pics/topo_issues.PNG)
+Required arguments: 
 
+--in : directory where image slices are located (e.g. C:/data/image_slices/), or a .raw file. If the input is a .raw file, an accompanying .dat file must be specified in the command (--dat [file.dat]).
 
-* The representation of the plant structure by a curve skeleton known as the medial axis. This allows for a compact graph representation of the plant's structure using nodes and edges, while also encoding shape information such as thickness and width. These characteristics make our pipeline more amenable to computing architecture. We use the medial axis computation and skeleton 
-pruning techniques introduced in [Yan et. al, 2018] and [Yan et. al, 2016].
+--out  : Specifies the location and names of the output files. If the argument value is directory/output_file_name, then the three output files are named as directory/output_file_name.ply (geometric skeleton), directory/output_file_annotations.txt (annotation file), and directory/output_file.off (Surface mesh for visualization)
 
-
-![](pics/skeleton.PNG)
-
-
-* A novel algorithm for computing the hierarchy of the plant structure, which recursively minimizes that maximum branching depth of the predicted structure of the plant at each hierarchy level. Our algorithm also considers branch length and angle continuity.
-
-
-![](pics/architecture.PNG)
-
-
-* An algorithm for identifying the stem / tiller of the plant structure which uses the thickness information along the medial axis. This was previously used in [Li et. al, 2020] as a step of the algorithm to identify primary branches, as part of a comprehensive 3D phenotypic study which revealed continuous morphological variation across diverse sorghum influorescences. Here we extend the stem identification algorithm to also be able to track multiple tillers, which can be seen in structures such as sorghum roots
-
-![](pics/stem_identification.PNG)
-
-
-See the References section at the end of this page for full citations to our talk at the North American Plant Phenotyping Network Conference (NAPPN) 2021, as well as the other mentioned works. Feel free to cite this pipeline as mentioned in the References section.
-
-## Results and Examples
-
-As part of an ongoing genome-wide large-scale study to discover the genes that play a role in Sorghum root and panicle architecture, we have (so far) batch processed over 700 roots and 500 panicles coming from more than 200 varieties of the Sorghum Association Panel. Each sample was processed in about eight minutes, without user intervention between samples. The hierarchy algorithm step of our pipeline can be replaced with a sorghum panicle branch identification algorithm to trace branches such as those seen in [Li et. al 2020]:
-
-<img src="pics/sorghum_paper.PNG" alt="sorghum panicles" width="650">
-
- In general, the steps of our pipeline can be interchanged with other existing algorithms or isolated as individual steps.
-
-Our pipeline may also be applied Maize Crown roots, producing both the architectural traits detailed below and other traits specific to crown roots (such as per-node statistics and the soil line). This is an area of future work.
-
-A maize crown root:
-
-![](pics/maize_root.PNG)
-
-## Installation
-
-The steps of installation consist of downloading this code repository, building a few C++ projects, and ensuring the proper python version is installed. The pipeline currently only builds and operates on Windows. 
-
-1. Clone this repository: git clone https://github.com/danzeng8/TopoRoot.git
-
-Before proceeding to the other installation instructions, try just running the pipeline. This repository comes with pre-built executable software configured for a Windows 10 machine, which may work or not work on your machine.
-
-Try running the following command, after navigating to the TopoRoot directory using the 'cd' command on the Windows command prompt:
-
-python toporoot.py -i example_root/in/ -o example_root/out/ -d 6
-
-If successful, this will produce a .ply file, .csv file, and .off file in the example_root/out/ directory within 5-10 minutes. Otherwise, if the run fails, continue onto the next steps.
-
-2. ['Install Visual Studio 2019'](https://visualstudio.microsoft.com/downloads/), if it is not already installed. 
-
-3. Navigate to the TopoRoot/TopoSimplifier directory, and click to open the TopoSimplifier.sln directory. In the top of the Visual Studio Window, change the build mode to 'Release' and architecture to x64.
-
-Then, go to Project > Properties. This is where the Windows SDK Version and Platform Toolset will depend on your machine. If you are using Visual studio 2019, then try v142 for the platform toolset (v141 for VS 2017, v140 for VS 2015). Windows SDK version 10.0 is the latest installed version on my machine (a Windows 10), however I have also seen Windows 8 SDK to work instead on older machines (sometimes even if they are Windows 10). Apply the changes in the property window.
-
-Next, in the Visual Studio menu go to Build > Build Solution. If successful, there will be no errors in the Visual Studio window, and it will also update the .exe file in the main repository directory (called TopoSimplifier.exe). Note that "Date modified" should update to date and time of the successful installation. Otherwise, keep tweaking the Project properties as in the above - assuming a Windows 8 or 10 machine, there should be an appropriate combination of platform toolset and Windows SDK version which will allow for a successful builds.
-
-4. Make sure the simpleDictionaryFull.bin file in the TopoSimplifier directory is completely downloaded (ALL 131,072 Kb of it). If it is not, click ['here'](https://github.com/danzeng8/TopoRoot/blob/master/TopoSimplifier/simpleDictionaryFull.bin) to download the full file, and replace the incomplete one in the TopoSimplifier directory.  
-
-5. Click ['here'](https://github.com/danzeng8/root_traits_auto) to download the root_traits_auto source code. Open the root_traits_auto.sln file. Follow the corresponding directions from step 3 to build the project. Following a successful build, root_traits_auto.exe will be updated in the main root_traits_auto folder. Copy root_traits_auto.exe and paste it into the TopoRoot directory.
-
-6. Install python version 3.9 ['here'](https://www.python.org/downloads/release/python-390/). Add python to your windows path. There are many instructions online on how to do this, including ['here'](https://datatofish.com/add-python-to-windows-path/).
-
-7. Try running the following command, after navigating to the TopoRoot directory using the 'cd' command on the Windows command prompt:
-
-python toporoot.py -i example_root/in/ -o example_root/out/ -d 6
-
-If successful, this will produce a .ply file, .csv file, and .off file in the example_root/out/ directory within 5-10 minutes. Otherwise, if the run fails, make sure that the previous steps are performed correctly.
-
-Among other potential errors, you may see an error such as "Import Error: No module named networkx". In these cases the error is due to a python module not being installed. This can be fixed by running "pip install [insert_module_name]"" on the windows command prompt, such as "pip install networkx" in the above case. 
+--S : Shape iso-value.
 
 If you encounter any further issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github. 
 
