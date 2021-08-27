@@ -1,4 +1,4 @@
-# TopoRoot: A method for computing hierarchy and fine-grained traits of maize roots from CT images
+# TopoRoot: A method for computing hierarchy and fine-grained traits of maize roots from X-ray CT images
 
 ![](pics/pipeline.PNG)
 ## Introduction
@@ -158,9 +158,9 @@ I would like to thank the following people for their support, input, and collabo
 
 ## References:
 
-To cite this pipeline:
+To cite this work:
 
-Zeng, Dan. "TopoRoot: An automatic pipeline for plant architectural analysis from 3D Imaging." North American Plant Phenotyping Network Conference, 16-19 February 2021. Lightning Talk. 
+*Zeng D, Li M, Jiang N, Ju Y, Schreiber H, Chambers E, Letscher D, Ju T, Topp CN. TopoRoot: A method for computing hierarchy and fine-grained traits of maize roots from X-ray CT images. bioRxiv 2021. doi: https://doi.org/10.1101/2021.08.24.457522
 
 References to other works:
 
@@ -177,6 +177,8 @@ Comprehensive 3D phenotyping reveals continuous morphological variation across g
 
 * Yajie Yan, Kyle Sykes, Erin Chambers, David Letscher, and Tao Ju. 2016. Erosion Thickness on Medial Axes of 3D Shapes. ACM Trans. Graph. 35, 4 (2016), 38.
 	* [Project website](https://yajieyan.github.io/project/et/)
+
+* Zeng, Dan. "TopoRoot: An automatic pipeline for plant architectural analysis from 3D Imaging." North American Plant Phenotyping Network Conference, 16-19 February 2021. Lightning Talk. 
 
 
 ![](pics/dan_seeds.jpg)
