@@ -148,6 +148,7 @@ I would like to thank the following people for their support, input, and collabo
 * Tim Brown
 * Dhinesh Thiruppathi
 * Shayla Gunn
+* Tiffany Hopkins
 * Mon-Ray Shao
 * Keith Duncan
 * Elisa Morales
