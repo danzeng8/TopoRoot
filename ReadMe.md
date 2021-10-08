@@ -35,8 +35,14 @@ Optional arguments:
 
 --multi : Compute multiple tillers / stems. Applicable to species such as Sorghum. This is an experimental setting which is still being researched.
 
-If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github. 
- 
+If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github.
+
+## Experimental Data
+
+The data used for ground truth validation in our manuscript can be found here:
+
+[https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr](https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr)
+
 
 ## Understanding the output
 
