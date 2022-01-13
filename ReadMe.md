@@ -86,36 +86,40 @@ Optional output traits (computed using the --plane flag above), which have not b
 
 Included with this repository is a graphical user interface which can be used to visualize the results. Here is a step-by-step walkthrough:
 
-1. Navigate to the TopoRoot/et/ directory, and double click on the EtDev application. This will open the user interface:
+1. Navigate to the TopoRoot/gui/ directory, and double click on the root_mesh_viewer application. This will open the user interface. Click on select .ply and select .txt to load the outputs of TopoRoot.
 
-![](pics/gui.PNG)
+![](pics/init_skel.png)
 
-3. Next to "3d shape", click browse. Select the .off file with the same name as the .ply file (the name of your sample).
+2. Switch to the Mesh tab, and click Select .off . Select the .off file with the same name as the .ply file (the name of your sample).
 
-After clicking open, the shape will be loaded in:
+After clicking open, the surrounding shape (the result of topological simplification) will be loaded in.
 
-![](pics/shape_loaded.PNG)
+![](pics/shape.png)
 
-You will likely want to re-orient the visualization a bit to get a better view. Mouse controls:
+3. To view the hierarchy level, change the "Skeleton Color" option from Normal Coloring(Black) to Color by Hierarchy. Cooler colors (dark blue) represent lower hierarchy levels (starting from the stem), while warmer colors (green, yellow, red, etc.) represent higher hierarchy levels (higher-order lateral roots).
+
+![](pics/hierarchy.png)
+
+Mouse controls:
 * Rotate: drag left mouse button
 * Translate: drag right mouse button
-* Zoom: Click down on middle scroll of the mouse, and drag up and down. 
+* Zoom: Click down on middle scroll of the mouse, and drag up and down.
 
-4. Now lets make the shape semi-transparent, with the skeleton eventually being shown within it. Go to the visualization tab, select shape color, and enter (100, 100, 100) for Red, Green, and Blue, and click ok. Still in the visualization tab, scale up the shape transparency as desired. Move back to the Skeletonization tab 
+4. To filter the view of the hierarchy, toggle the checkboxes in the left panel of the Skeleton tab. For example to only view the stem path uncheck the other boxes.
 
-![](pics/shape_transparent.PNG)
+![](pics/stem.png)
 
-2. Loading in the skeleton, let's switch to the Skeletonization tab. Under Import Skeleton, click Choose File and select the skeleton .ply file of the result that you want to visualize:
+5. If the --plane option was run, then the annotation file will come with the location of the soil plane and whorls. These can be toggled as well in the left panel of the Skeleton tab.
 
-This will load in a skeleton, initially colored by thickness:
+Soil plane:
+![](pics/plane.png)
 
-![](pics/skeleton_loaded.PNG)
+Roots above and below soil:
+![](pics/abovebelow.png)
 
-3. Go to the Visualization tab. Under skeleton, change curve color to "burntime on MA". In the same tab you can increase the line width (to say, 3), and change the "BG color" to white. You will now get a visualization which resembles this:
+Whorls:
+![](pics/whorls.png)
 
-![](pics/root_hierarchy.PNG)
-
-The architecture is now colored by hierarchy level. The "coolest color", in this case blue, represents the portion of the skeleton that is within the stem, as computed by the pipeline. As the color becomes warmer, the visualization is representing higher levels of the hierarchy. For example in this case a lighter cyan blue represents the level 1 branches (e.g. lateral roots), while green represents level 2 branches (secondary roots), and so forth. The color range can be scaled by toggling the minimum and maximum values under the curve color region of the GUI in the visualization tab.
 
 ## Picking the shape, kernel, and neighborhood thresholds.
 
