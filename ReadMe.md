@@ -5,7 +5,7 @@
 
 TopoRoot is a high-throughput computational method that computes fine-grained architectural traits from 3D CT images of excavated maize root crowns. These traits include the number, length, thickness, angle, tortuosity, and number of children for the roots at each level of the hierarchy. TopoRoot combines state-of-the-art algorithms in computer graphics, such as topological simplification and geometric skeletonization, with customized heuristics for robustly obtaining the branching structure and hierarchical information.
 
-Paper can be found here (currently under review): [https://www.biorxiv.org/content/10.1101/2021.08.24.457522](https://www.biorxiv.org/content/10.1101/2021.08.24.457522)
+Paper can be found here: [https://rdcu.be/cC9Ng](https://rdcu.be/cC9Ng)
 
 ## Installation and Execution
 
@@ -35,14 +35,14 @@ Optional arguments:
 
 --multi : Compute multiple tillers / stems. Applicable to species such as Sorghum. This is an experimental setting which is still being researched.
 
-If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github.
+
+If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github. 
 
 ## Experimental Data
 
 The data used for ground truth validation in our manuscript can be found here:
 
 [https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr](https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr)
-
 
 ## Understanding the output
 
