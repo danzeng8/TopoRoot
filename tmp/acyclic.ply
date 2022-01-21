@@ -1,0 +1,15 @@
+ply
+format ascii 1.0
+element vertex 0
+property float32 bt2
+property float32 radius
+property int32 stem
+property float32 x
+property float32 y
+property float32 z
+element edge 0
+property int32 vertex1
+property int32 vertex2
+element face 0
+property list uint8 int32 vertex_indices
+end_header
