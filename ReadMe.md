@@ -171,7 +171,7 @@ I would like to thank the following people for their support, input, and collabo
 
 To cite this work:
 
-* Zeng D, Li M, Jiang N, Ju Y, Schreiber H, Chambers E, Letscher D, Ju T, Topp CN. TopoRoot: A method for computing hierarchy and fine-grained traits of maize roots from X-ray CT images. bioRxiv 2021. doi: https://doi.org/10.1101/2021.08.24.457522
+* Zeng, D., Li, M., Jiang, N. et al. TopoRoot: a method for computing hierarchy and fine-grained traits of maize roots from 3D imaging. Plant Methods 17, 127 (2021). https://doi.org/10.1186/s13007-021-00829-z
 
 References to other works:
 
