@@ -35,6 +35,10 @@ Optional arguments:
 
 --multi : Compute multiple tillers / stems. Applicable to species such as Sorghum. This is an experimental setting which is still being researched.
 
+--lowerRadius : threshold for the thickness of the thinnest part of the stem. Only vertices greater than this threshold can potentially be greater (default = 0.15 of thickest vertex). If parts of the stem are missing, decrease this threshold.
+
+--upperRadius: threshold for the thickness of the thickest part of the stem. The stem identification algorithm begins with vertices whose thickness is greater than this value (default 0.95 for single-tiller mode, 0.35 for multi-tiller mode). If tillers (in multiple-tiller mode) fail to be identified, decrease this threshold. 
+
 
 If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com or file an issue on Github. 
 
@@ -140,6 +144,36 @@ Go to Tools > Volume Data > Volume Viewer. Then in the Volume Viewer window chan
 ![](pics/corn_root_chimera.PNG)
 
 Note that if the volume is particularly huge (greater than about 800^3), you may consider changing the step size to "2" or lower. The step size offers a balance between speed and resolution.
+
+## Downsampling
+
+For images with resolution greater than around 500^3, it is recommended to downsample prior to running the tool. This can be done in a variety of software such as ImageJ, though a script (downsample.py) can also be used to perform the downsampling. The script takes as input (-i argument) a directory of image slices and a downsampling rate (-d argument), and outputs the downsampled images in the directory of the -o argument:
+
+python downsample.py -i /full_res/ -o /downsampled/ -d [downsampling rate, e.g. 4]
+
+A downsampling rate which would bring the volumes to a resolution of 400^3 provides a good balance between resolution and efficiency. For example, if the original resolution is 1800^3, then a downsampling rate of 4 (to 450^3) may work well. If the program is too slow, higher downsampling rates can be gradually picked.
+
+## Batch Processing Mode
+
+For specific datasets, the TopoRoot can be run without the parameters S, N, and/or K. Please note that these modes of the tool have not been thoroughly validated and are solely based on practical observations of them working well in practice.
+
+For X-ray CT images of excavated Maize roots, the tool can be run without N or K (only S is chosen):
+
+TopoRoot --in inputFile --out outputFile --S [shape]
+
+Please refer to the above section on how to pick the shape threshold using visualization software such as UCSF Chimera. With this setting, TopoRoot will automatically pick an N which is slightly above the "air" intensity value, and a K which is slightly above S.
+
+For X-ray CT images of excavated Sorghum roots, the tool can be run in a batch processing mode, without S, N, or K:
+
+TopoRoot --in inputFile --out outputFile
+
+TopoRoot will automatically pick S to be the air intensity plus five, and N and K are chosen as before. TopoRoot can then be run in a batch process mode on an entire folder of image slices (or .raw files, but slices is preferred) using the toporoot_batch.py script as follows: 
+
+python toporoot_batch.py -i myfolder/ -o outputfolder/ -d downsampling rate -m (1 for multiple tillers, 0 for single)
+
+For images with approximate resolutions of 1800^3, it is recommended to downsample the volumes beforehand prior to running the tool. 
+
+A downsampling rate of 4 (running time ~25 minutes) or 6 (running time ~10 minutes) typically works well. For sorghum data with multiple tillers, tillers (especially thinner ones) may fail to be identified in certain cases. These tillers can potentially be identified by lowering the --upperRadius threshold (see input arguments above). However, if the tillers have the same thickness as roots, then this may cause portions of roots to be misidentified as being a part of tillers.
 
 ## Acknowledgements
 

@@ -1,0 +1,3 @@
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/lib_new/CMakeFiles/trimesh.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/lib_new/CMakeFiles/ALL_BUILD.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/lib_new/CMakeFiles/ZERO_CHECK.dir

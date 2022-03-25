@@ -1,0 +1,14 @@
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_align.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_cat.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_filter.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_check.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_hf.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_cc.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_crunch.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_info.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/xf.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_make.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_shade.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/mesh_view.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/ALL_BUILD.dir
+C:/Users/Yiwen Ju/source/Trimesh_Cmake/Trimesh2-master/util_new/CMakeFiles/ZERO_CHECK.dir

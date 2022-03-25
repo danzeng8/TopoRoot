@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Yiwen Ju\source\Trimesh_Cmake\Trimesh2-master\util\mesh_make.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Yiwen Ju\source\Trimesh_Cmake\Trimesh2-master\util\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7FE28EBD-4C6C-32FF-A55A-52036C4EE84B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
