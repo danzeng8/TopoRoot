@@ -22,7 +22,7 @@ def main(argv):
       elif opt == '-o':
          outputfile = arg
       elif opt == '-d':
-         downsample = int(arg)
+         downsample = float(arg)
       elif opt == '-m':
          multi = bool(int(arg))
    print('Input directory is ', inputfile)

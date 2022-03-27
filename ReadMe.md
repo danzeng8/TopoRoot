@@ -153,6 +153,10 @@ python downsample.py -i /full_res/ -o /downsampled/ -d [downsampling rate, e.g. 
 
 A downsampling rate which would bring the volumes to a resolution of 400^3 provides a good balance between resolution and efficiency. For example, if the original resolution is 1800^3, then a downsampling rate of 4 (to 450^3) may work well. If the program is too slow, higher downsampling rates can be gradually picked.
 
+python downsample_batch.py -i input_dir/ -o output_dir/ -d [downsampling rate (e.g. 4)]
+
+Before running downsampling in batch mode, please create folders with the subfolder names. For example if the input folder has a subfolder of image slices called "slices1", then the output folder should also have a subfolder called "slices1". The downsampled result for that data will go into that subfolder.
+
 ## Batch Processing Mode
 
 For specific datasets, the TopoRoot can be run without the parameters S, N, and/or K. Please note that these modes of the tool have not been thoroughly validated and are solely based on practical observations of them working well in practice.
