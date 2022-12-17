@@ -46,7 +46,7 @@ If you encounter any issues, please contact me (Dan Zeng) at danzeng8@gmail.com 
 
 The data used for ground truth validation in our manuscript can be found here:
 
-[https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr](https://wustl.box.com/s/a9snbng1x8ebxpr7kt7g30uu6q8hzytr)
+[https://wustl.box.com/s/yklsinv5v86est2vxk20bwt8e6inq7l0](https://wustl.box.com/s/yklsinv5v86est2vxk20bwt8e6inq7l0)
 
 ## Understanding the output
 
